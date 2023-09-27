@@ -1,4 +1,6 @@
-class Quadrilatere implements Forme {
+import { Forme } from "./Forme";
+
+export class Quadrilatere implements Forme {
     private _cote1: number;
     private _cote2: number; 
     private _cote3: number;   

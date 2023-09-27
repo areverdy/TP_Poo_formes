@@ -1,4 +1,6 @@
-class Triangle implements Forme {
+import { Forme } from "./Forme";
+
+export class Triangle implements Forme {
    private _longueurCote: number;
 
    constructor (longueurCote : number){

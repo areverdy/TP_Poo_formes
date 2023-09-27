@@ -1,4 +1,6 @@
-class Losange implements Forme {
+import { Forme } from "./Forme";
+
+export class Losange implements Forme {
     private _petiteDiag: number;
     private _grandeDiag: number;
 

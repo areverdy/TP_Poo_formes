@@ -1,7 +1,8 @@
-class PentagoneR implements Forme {
+import { Forme } from "./Forme";
+
+export class PentagoneR implements Forme {
     private _longueurCote: number;  
     private _largeurCote: number;
-
 
     constructor (longueurCote : number, largeurCote : number){
         this._longueurCote = longueurCote,

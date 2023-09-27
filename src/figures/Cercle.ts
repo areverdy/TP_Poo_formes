@@ -1,4 +1,6 @@
-class Cercle implements Forme {
+import { Forme } from "./Forme";
+
+export class Cercle implements Forme {
    private _rayon: number;
 
    constructor (rayon: number){

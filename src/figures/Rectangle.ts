@@ -1,4 +1,6 @@
-class Rectangle implements Forme {
+import { Forme } from "./Forme";
+
+export class Rectangle implements Forme {
     private _longueurCote: number; 
     private _largeurCote: number;
 
@@ -8,10 +10,10 @@ class Rectangle implements Forme {
     }
 
    aire() : number{
-       return 0;//??;
+    return this._longueurCote * this._largeurCote;
    }
    perimetre(): number {
-    return 0;//??;
+    return 2 * (this._longueurCote + this._largeurCote);
     }
      public get longueurCote(): number {
         return this._longueurCote;

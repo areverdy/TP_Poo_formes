@@ -1,4 +1,6 @@
-class Parrallelogramme implements Forme {
+import { Forme } from "./Forme";
+
+export class Parrallelogramme implements Forme {
     private _hauteur: number;  
     private _cote: number;   
 
