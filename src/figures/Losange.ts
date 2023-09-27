@@ -3,10 +3,12 @@ import { Forme } from "./Forme";
 export class Losange implements Forme {
     private _petiteDiag: number;
     private _grandeDiag: number;
+    public static NBRE_LOSANGE: number =0;
 
     constructor (petiteDiag : number, grandeDiag : number) {
         this._petiteDiag = petiteDiag,
-        this._grandeDiag = grandeDiag
+        this._grandeDiag = grandeDiag,
+        Losange.NBRE_LOSANGE++;
     }
 
     aire() : number{

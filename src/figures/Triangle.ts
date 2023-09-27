@@ -2,9 +2,11 @@ import { Forme } from "./Forme";
 
 export class Triangle implements Forme {
    private _longueurCote: number;
+   public static NBRE_TRIANGLE: number = 0;
 
    constructor (longueurCote : number){
-    this._longueurCote = longueurCote
+    this._longueurCote = longueurCote,
+    Triangle.NBRE_TRIANGLE++;
    }
 
    aire(): number{

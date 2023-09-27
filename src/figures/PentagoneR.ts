@@ -3,10 +3,12 @@ import { Forme } from "./Forme";
 export class PentagoneR implements Forme {
     private _longueurCote: number;  
     private _largeurCote: number;
+    public static NBRE_PENTAGONER: number =0; 
 
     constructor (longueurCote : number, largeurCote : number){
         this._longueurCote = longueurCote,
         this._largeurCote = largeurCote
+        PentagoneR.NBRE_PENTAGONER++;
     }
 
     aire() : number{

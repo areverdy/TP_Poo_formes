@@ -1,12 +1,14 @@
 import { Forme } from "./Forme";
 
-export class Parrallelogramme implements Forme {
+export class Parallelogramme implements Forme {
     private _hauteur: number;  
-    private _cote: number;   
+    private _cote: number; 
+    public static NBRE_PARALLELOGRAMME: number =0;  
 
     constructor (hauteur: number, cote: number) {
         this._hauteur = hauteur,
         this._cote = cote
+        Parallelogramme.NBRE_PARALLELOGRAMME++;
     }
 
     aire() : number{

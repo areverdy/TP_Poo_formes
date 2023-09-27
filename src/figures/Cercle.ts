@@ -2,9 +2,11 @@ import { Forme } from "./Forme";
 
 export class Cercle implements Forme {
    private _rayon: number;
+   public static NBRE_CERCLE: number =0;
 
    constructor (rayon: number){
-      this._rayon = rayon
+      this._rayon = rayon;
+      Cercle.NBRE_CERCLE++;
    }
 
    aire() : number{

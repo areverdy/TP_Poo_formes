@@ -3,10 +3,12 @@ import { Forme } from "./Forme";
 export class Rectangle implements Forme {
     private _longueurCote: number; 
     private _largeurCote: number;
+    public static NBRE_RECTANGLE: number =0;
 
     constructor (longueurCote: number, largeurCote: number){
         this._longueurCote = longueurCote,
-        this._largeurCote = largeurCote
+        this._largeurCote = largeurCote,
+        Rectangle.NBRE_RECTANGLE++;
     }
 
    aire(): number{

@@ -1,7 +1,7 @@
 import { Carre } from "./figures/Carre"
 import { Forme } from "./figures/Forme"
 import { Losange } from "./figures/Losange"
-import { Parrallelogramme } from "./figures/Parrallelogramme"
+import { Parallelogramme } from "./figures/Parallelogramme"
 import { PentagoneR } from "./figures/PentagoneR"
 import { Quadrilatere } from "./figures/Quadrilatere"
 import { Rectangle } from "./figures/Rectangle"
@@ -25,7 +25,7 @@ rectangle1.perimetre()
 console.log("Rectangle1 a pour aire", rectangle1.aire().toFixed(2), "et pour périmètre ",rectangle1.perimetre().toFixed(2))
 
 let losange1: Forme = new Losange(2,3)
-let parallelogramme1: Forme = new Parrallelogramme(8,9)
+let parallelogramme1: Forme = new Parallelogramme(8,9)
 let pentagone1: Forme = new PentagoneR(5,7)
 let quadrilatere1: Forme = new Quadrilatere(1,2,3,4)
 
@@ -44,3 +44,21 @@ console.log("Pentagone1 a pour aire", pentagone1.aire().toFixed(2), "et pour pé
 quadrilatere1.aire()
 quadrilatere1.perimetre()
 console.log("Quadrilatère1 a pour aire", quadrilatere1.aire().toFixed(2), "et pour périmètre ",quadrilatere1.perimetre().toFixed(2))
+
+
+let carre2 = new Carre(8)
+carre2.aire()
+carre2.perimetre()
+console.log("Carre2 a pour aire", carre2.aire().toFixed(2), "et pour périmètre ",carre2.perimetre().toFixed(2))
+
+console.log(Carre.NBRE_CARRE)
+let airesdescarres = carre1.aire() + carre2.aire()
+let perimetredescarres = carre1.perimetre() + carre2.perimetre()
+console.log("Somme des aires des carrés :",airesdescarres.toFixed(2))
+console.log("Sommes des périmètres des carrés :", perimetredescarres.toFixed(2))
+
+
+function getSommeAirePerimetres() {
+  
+}
+console.log(sommeAireCarre, sommePerimetreCarre)
