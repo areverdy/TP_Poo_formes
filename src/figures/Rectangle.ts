@@ -9,8 +9,8 @@ export class Rectangle implements Forme {
         this._largeurCote = largeurCote
     }
 
-   aire() : number{
-    return this._longueurCote * this._largeurCote;
+   aire(): number{
+    return this._longueurCote * this._largeurCote
    }
    perimetre(): number {
     return 2 * (this._longueurCote + this._largeurCote);

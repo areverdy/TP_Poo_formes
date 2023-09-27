@@ -7,7 +7,7 @@ export class Triangle implements Forme {
     this._longueurCote = longueurCote
    }
 
-   aire() : number{
+   aire(): number{
     const s = (this._longueurCote *3) / 2;
     return Math.sqrt(s * (s - this._longueurCote) * (s - this._longueurCote) * (s - this._longueurCote));
    }

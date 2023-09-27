@@ -2,6 +2,7 @@ import { Forme } from "./Forme";
 
 export class Carre implements Forme {
    private _longeurCote: number;
+   
 
    constructor (longueurCote : number) {
     this._longeurCote = longueurCote
