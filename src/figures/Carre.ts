@@ -24,11 +24,8 @@ export class Carre implements Forme {
         sommeAireCarre+=monCarre.aire();
         sommePerimetreCarre+=monCarre.perimetre()
     });
-
-
     return [sommeAireCarre,sommePerimetreCarre] 
-    console.log(sommeAireCarre, sommePerimetreCarre)
-}
+    }
     
    public get longeurCote(): number {
     return this._longeurCote;

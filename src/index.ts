@@ -51,14 +51,14 @@ carre2.aire()
 carre2.perimetre()
 console.log("Carre2 a pour aire", carre2.aire().toFixed(2), "et pour périmètre ",carre2.perimetre().toFixed(2))
 
-console.log(Carre.NBRE_CARRE)
-let airesdescarres = carre1.aire() + carre2.aire()
-let perimetredescarres = carre1.perimetre() + carre2.perimetre()
-console.log("Somme des aires des carrés :",airesdescarres.toFixed(2))
-console.log("Sommes des périmètres des carrés :", perimetredescarres.toFixed(2))
+// console.log(Carre.NBRE_CARRE)
+// let airesdescarres = carre1.aire() + carre2.aire()
+// let perimetredescarres = carre1.perimetre() + carre2.perimetre()
+// console.log("Somme des aires des carrés :",airesdescarres.toFixed(2))
+// console.log("Sommes des périmètres des carrés :", perimetredescarres.toFixed(2))
 
 
 function getSommeAirePerimetres() {
   
 }
-console.log(sommeAireCarre, sommePerimetreCarre)
+console.log(Carre.getSommeAirePerimetres([carre1, carre2]))
